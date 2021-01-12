@@ -28,6 +28,8 @@ function createPassword() {
 
     // select length (if the input is out of the parameters, alert that the length doesn't meet qualifications)
     var length = prompt("How long do you want your password to be? Password must be between 8 and 128 characters.");
+
+    // empty password and character option string/array
     var generatedPassword = '';
     var characterOptions = [];
 
@@ -35,6 +37,7 @@ function createPassword() {
         alert("Your password must be between 8 and 128 characters.");
     } else if (!upper && !lower && !special && !num) {
         alert("You need to select at least one criteria to generate a password.")
+
         // if user inputs text, an alert appears reminding them to use numbers
     } else if (isNaN(length)) {
         alert("You must input a number for the length of your password.")
@@ -46,9 +49,11 @@ function createPassword() {
         }
         if (lower) {
             characterOptions = characterOptions.concat(lowerCase);
-        } if (special) {
+        }
+        if (special) {
             characterOptions = characterOptions.concat(specialChars);
-        } if (num) {
+        }
+        if (num) {
             characterOptions = characterOptions.concat(numbers);
         }
         while (generatedPassword.length < length) {
