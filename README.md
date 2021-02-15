@@ -8,6 +8,10 @@ This application is designed to create a randomized, custom password based upon 
 
 This application can be used for employees with access to sensitive data, or for the security-conscious home internet user. It creates a highly secure password that is completely random.
 
+# Technologies Used
+
+HTML, JavaScript, CSS
+
 # Deployed link
 
 https://caroline-e-miller.github.io/super-password-generator/
